@@ -40,7 +40,7 @@ void BitcoinExchange::constructDB() {
 
     this->_db.clear();
     // Read the file line by line
-    int i = 0;
+    int i = -1;
     while (getline(db_file, line)) {
         i++;
         if (i == 0) {
@@ -90,7 +90,7 @@ float BitcoinExchange::getRate(const std::string date) {
         std::map<std::string, float>::iterator it;
         std::string close_date;
 
-        for (it = this->_db.begin(); it != this->_Db.end(); ++it) {
+        for (it = this->_db.begin(); it != this->_db.end(); ++it) {
             int comp = date.compare(it->first);
 
             if (comp == -1) {
