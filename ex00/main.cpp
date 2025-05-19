@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 
 
-	// Opening file
+	// Opening filee
 	std::string line;
 	std::ifstream inputfile(argv[1]);
 
