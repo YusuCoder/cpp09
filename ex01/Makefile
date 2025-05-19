@@ -1,7 +1,6 @@
-NAME    := btc
+NAME    := rpn
 SRC     := main.cpp \
-			BitcoinExchange.cpp \
-			btc.cpp
+			RPN.cpp 
 GPP     := g++
 CFLAGS  := -Wall -Wextra -Werror -std=c++17
 INC     := -I inc
